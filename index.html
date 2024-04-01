@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6 - Holy Grail Layout with JavaScript</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link your CSS file here -->
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+          <img
+            src="C:\Users\User\Desktop\WebTechnology\Web\ITC505\lab-6\imagespace.jpg"
+            alt="Header Image"
+            class="headerImg"/>
+        </div>
+      </header>
+
+    <nav>
+        <!-- Sidebar/Menu -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="content">
+            <h1>Ascending Number Sorter</h1>
+    <p>Enter numbers separated by commas:</p>
+    <input type="text" id="inputNumbers">
+    <button onclick="sortNumbers()">Sort</button>
+    <div id="output"></div>
+        </section>
+
+        <section id="content">
+            <h1>Background Colour Changer</h1>
+            <button id="changeColorButton">Change Background Color</button> 
+        </section>
+    </main>
+    <script src="script.js"></script>
+
+    <aside>
+        <section>
+        <h3>Advertisement 1</h3>
+        <div class="advertisement">
+            <a href="https://www.amazon.com" target="_blank">
+                <img src="C:\Users\User\Desktop\WebTechnology\Web\ITC505\lab-6\download.jpeg" alt="Advertisement 1">
+            </a>
+        </div>
+        </section>
+        <h3>Advertisement 2 </h3>
+        <div class="advertisement">
+            <a href="https://www.amazon.com/Fossil-Quartz-Stainless-Steel-Chronograph/dp/B008AXYWHQ/ref=sr_1_14?crid=BX96S88OEFUH&dib=eyJ2IjoiMSJ9.QZ_yTQjxClDzeztuzKx0dp7gKNRn2pJShuiZkZHuy0oG0RfI38lXiS0qSfP1LE6QNhTMEaMSk_dfYcrKunfLxj4cc1Ksqh70rUmegeaBQRtz37sN4nEiNifpldUwm0bPSz48ze9HEBeijwxGsOAlV4JC-gvxIAHabWHjh-cFhshVftBcPwEHjf5o0qYuemLwjhO5gZsdF0G-gNHo0217X9UadG5aQG1CS8K1zOPc5bqoP3nMDgGJ8xj8kLuKQCA4z5x-yE-2DOSb0gHnxZbQdb_rgMhv5xAtCYcghBw5c-8.SvCoTHG6xdiDF2oDxtukqXoAQE47r7YUsBHSeLqRxjE&dib_tag=se&keywords=watches&qid=1711944210&sprefix=watches%2Caps%2C183&sr=8-14&th=1 target="_blank">
+                <img src="C:\Users\User\Desktop\WebTechnology\Web\ITC505\lab-6\watch.jpeg" alt="Advertisement 2">
+            </a>
+        </div>
+    </aside>
+    <!-- Inside the content section of your HTML -->
+<!-- Inside the main section of your HTML -->
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </p>
+    <p>
+        <strong>Addendum:</strong> This website implements two features using JavaScript. The first feature is an ascending number sorter, which sorts a list of numbers entered by the user in ascending order. To achieve this, the JavaScript code retrieves the input numbers, splits them into an array, sorts the array using the built-in `sort()` method, and displays the sorted numbers in the output area. The second feature is a background color changer, which changes the background color of the page to a random color when a button is clicked. This is accomplished by generating a random color using a function and setting the background color of the page accordingly.
+
+        During implementation, one difficulty encountered was ensuring that the numbers entered by the user were correctly parsed and sorted. This was addressed by using the `parseInt()` function to convert the input strings to integers and trimming any leading or trailing whitespace. Another challenge was ensuring cross-browser compatibility for setting the background color dynamically. This was resolved by using the `document.body.style.backgroundColor` property to set the background color of the body element.
+
+    </p>
+    </footer>
+    <script src="script.js"></script><!-- Link your JavaScript file here -->
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
